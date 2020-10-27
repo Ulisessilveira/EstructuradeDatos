@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Libreria.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Libreria/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Libreria/.idea/artifacts/Libreria_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Libreria/.idea/misc.xml" afterDir="false" />
@@ -13,7 +14,9 @@
       <change afterPath="$PROJECT_DIR$/../Libreria/src/conversiones/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConceptosBasicos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConceptosBasicos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ConceptosBasicos/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ConceptosBasicos/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,22 +221,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="461" y="126" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602044703675" />
-    <state width="1367" height="198" key="GridCell.Tab.0.bottom" timestamp="1602042760511">
+    <state width="1367" height="198" key="GridCell.Tab.0.bottom" timestamp="1602045104303">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602042760511" />
-    <state width="1367" height="198" key="GridCell.Tab.0.center" timestamp="1602042760510">
+    <state width="1367" height="198" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602045104303" />
+    <state width="1367" height="198" key="GridCell.Tab.0.center" timestamp="1602045104302">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602042760510" />
-    <state width="1367" height="198" key="GridCell.Tab.0.left" timestamp="1602042760510">
+    <state width="1367" height="198" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602045104302" />
+    <state width="1367" height="198" key="GridCell.Tab.0.left" timestamp="1602045104302">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602042760510" />
-    <state width="1367" height="198" key="GridCell.Tab.0.right" timestamp="1602042760510">
+    <state width="1367" height="198" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602045104302" />
+    <state width="1367" height="198" key="GridCell.Tab.0.right" timestamp="1602045104303">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1367" height="198" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602042760510" />
+    <state width="1367" height="198" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1602045104303" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1602044708882">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
