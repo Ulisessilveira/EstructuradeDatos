@@ -24,7 +24,7 @@ public class Controller {
 
 
     Pez[] arreglo = new Pez[5];
-    int cont=0,cont2=0;
+    int cont=0;
 
     public void insertar(ActionEvent event){
         if(cont<5) {
@@ -36,7 +36,7 @@ public class Controller {
                     cont++;
                     txtArreglo.setText("");
                 }else {
-                    Alert alert = new Alert(Alert.AlertType.ERROR);//Error de un numero negativo
+                    Alert alert = new Alert(Alert.AlertType.ERROR);//Error de un numero negativo o comboBox vacio
                     alert.setTitle("Error");
                     alert.setContentText("Valor no valido");
                     alert.show();
@@ -58,8 +58,6 @@ public class Controller {
 
     //Boton procesar
     public void procesar(ActionEvent event){
-        //ObservableList<String> list = FXCollections.observableArrayList("Pescado "+arreglo[cont][cont2] + " nacen "+arreglo[cont3][cont4] +" por cría y "+ " al año");
-        //lista.setItems(list);
         for (int i=0;i<cont;i++){
             lista.getItems().add("Pescado " + arreglo[i].getTipo_pez() + " nacen " + arreglo[i].getPor_nacimiento() + " por crias y " + arreglo[i].peces_al_anio() +" anualmente");
         }
