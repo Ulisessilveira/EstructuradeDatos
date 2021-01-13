@@ -1,0 +1,26 @@
+.fondoImagen{
+    -fx-background-image: url("./img/fondo.png");
+    -fx-background-size: cover;
+}
+.fondoColor{
+    -fx-background-color: #352b31;
+}
+.buttonAceptar{
+    -fx-background-color: #8F002E;
+    -fx-background-radius: 30px;
+}
+.textfield{
+    -fx-background-color: #BEE2E7;
+    -fx-background-radius: 10px;
+}
+.cabecera{
+    -fx-background-color: #4F57AA;
+}
+.buttonInsertar{
+    -fx-background-color: #4F57AA;
+    -fx-background-radius: 30px;
+}
+.buttonGuardarPedido{
+    -fx-background-color: #8F002E;
+    -fx-background-radius: 30px;
+}
