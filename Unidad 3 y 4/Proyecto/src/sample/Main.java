@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     public static Stage stage;
+    public static String nombreUsuario = "";
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;

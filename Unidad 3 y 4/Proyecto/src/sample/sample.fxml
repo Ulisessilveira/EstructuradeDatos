@@ -25,9 +25,9 @@
             <Image url="@img/logo.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtUsuario" maxWidth="250.0" prefHeight="30.0" promptText="Usuario" styleClass="textfield" stylesheets="@estilos.css" />
+      <TextField fx:id="txtUsuario" maxWidth="250.0" onKeyReleased="#enter" prefHeight="30.0" promptText="Usuario" styleClass="textfield" stylesheets="@estilos.css" />
       <PasswordField fx:id="txtContraseña" maxWidth="250.0" onKeyReleased="#enter" prefHeight="30.0" promptText="Contraseña" styleClass="textfield" stylesheets="@estilos.css" />
-      <Button maxWidth="150.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" styleClass="buttonAceptar" stylesheets="@estilos.css" text="Ingresar " textFill="WHITE" />
+      <Button maxWidth="150.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" styleClass="buttonPrincipal" stylesheets="@estilos.css" text="Ingresar " textFill="WHITE" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

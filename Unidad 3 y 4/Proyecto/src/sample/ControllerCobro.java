@@ -4,10 +4,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import sample.Estructuras.ItemPedido;
 import sample.Estructuras.Pedido;
+
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -15,7 +20,7 @@ import java.util.Stack;
 public class ControllerCobro {
     @FXML ComboBox comboTipo, comboTamaño, comboMarca;
     @FXML TextField txtCantidad, txtNombre;
-    @FXML Label nombrePedido, nombreClinte;
+    @FXML Label nombrePedido, nombreClinte, nombreUsuario;
     @FXML TableView tabla;
     LinkedList<String> listaTipo = new LinkedList<>();
     LinkedList<String> listaTamaño = new LinkedList<>();
@@ -28,6 +33,7 @@ public class ControllerCobro {
     Queue<ItemPedido> cola=new LinkedList<>();
     Stack<ItemPedido> pila = new Stack<>();
     @FXML protected void  initialize(){
+        nombreUsuario.setText(Main.nombreUsuario);
         columnTipo.setCellValueFactory(new PropertyValueFactory<Pedido,String>("tipo"));
         columnTamaño.setCellValueFactory(new PropertyValueFactory<Pedido,String>("tamaño"));
         columnCatidad.setCellValueFactory(new PropertyValueFactory<Pedido,String>("cantidad"));
@@ -153,5 +159,15 @@ public class ControllerCobro {
     }
     public void limpiarTabla(ActionEvent event){
         listPedidos.clear();
+    }
+    public void abrirInventario(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("inventario.fxml"));
+        Scene scene = new Scene(root);
+        Main.stage.setScene(scene);
+    }
+    public void cerrarSesion (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene scene = new Scene(root);
+        Main.stage.setScene(scene);
     }
 }

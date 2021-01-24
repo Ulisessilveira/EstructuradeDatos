@@ -14,18 +14,27 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="727.0" styleClass="fondoColor" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCobro">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="727.0" styleClass="fondoColor" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCobro">
    <top>
       <HBox prefHeight="69.0" prefWidth="727.0" styleClass="cabecera" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
          <children>
-            <Label text="RUBIK'S WORLD" textFill="WHITE">
-               <HBox.margin>
-                  <Insets left="20.0" top="15.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
+            <VBox prefHeight="69.0" prefWidth="165.0">
+               <children>
+                  <Label text="RUBIK'S WORLD" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="COBRO" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
             <Pane prefHeight="65.0" prefWidth="362.0" stylesheets="@estilos.css" HBox.hgrow="ALWAYS" />
             <ImageView fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -35,19 +44,28 @@
                   <Insets bottom="5.0" left="5.0" right="1.0" top="5.0" />
                </HBox.margin>
             </ImageView>
-            <Label text="Ulises Silveira" textFill="WHITE">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
-               </HBox.margin>
-            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="nombreUsuario" text="Ulises Silveira" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#cerrarSesion" styleClass="buttonPrincipal" text="Cerrar sesión" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
          </children>
       </HBox>
    </top>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="512.0" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
          <children>
             <TableView fx:id="tabla" disable="true" opacity="0.84" prefHeight="254.0" prefWidth="492.0" styleClass="textfield" stylesheets="@estilos.css">
                <VBox.margin>
@@ -71,7 +89,7 @@
                   </Label>
                   <Label fx:id="nombrePedido" textFill="WHITE" />
                   <Pane prefHeight="25.0" prefWidth="299.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" onAction="#finalizar" prefHeight="25.0" prefWidth="90.0" styleClass="buttonGuardarPedido" stylesheets="@estilos.css" text="Finalizar" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#finalizar" prefHeight="25.0" prefWidth="90.0" styleClass="buttonSecundario2" stylesheets="@estilos.css" text="Finalizar" textFill="#20334d">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
@@ -83,7 +101,7 @@
                   <HBox prefHeight="25.0" prefWidth="665.0">
                      <children>
                         <Pane prefHeight="25.0" prefWidth="493.0" />
-                        <Button mnemonicParsing="false" onAction="#status" prefHeight="25.0" prefWidth="761.0" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Ver status del cliente" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#status" prefHeight="25.0" prefWidth="761.0" styleClass="buttonSecundario1" stylesheets="@estilos.css" text="Ver status del cliente" textFill="WHITE">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
@@ -144,17 +162,17 @@
                </VBox.margin>
             </Label>
             <ComboBox fx:id="comboMarca" prefHeight="25.0" prefWidth="208.0" styleClass="textfield" />
-            <Button mnemonicParsing="false" onAction="#insertarPedido" prefHeight="25.0" prefWidth="198.0" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Insertar" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#insertarPedido" prefHeight="25.0" prefWidth="198.0" styleClass="buttonSecundario1" stylesheets="@estilos.css" text="Insertar" textFill="WHITE">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#limpiarTabla" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Limpiar tabla" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#limpiarTabla" styleClass="buttonSecundario1" stylesheets="@estilos.css" text="Limpiar tabla" textFill="WHITE">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" top="10.0" />
                </VBox.margin>
             </Button>
-            <Label text="Nombre cliente" textFill="WHITE">
+            <Label fx:id="txtNombreUsuario" text="Nombre cliente" textFill="WHITE">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
@@ -164,7 +182,7 @@
                   <Insets top="5.0" />
                </VBox.margin>
             </TextField>
-            <Button mnemonicParsing="false" onAction="#guardarPedido" prefHeight="25.0" prefWidth="204.0" styleClass="buttonGuardarPedido" stylesheets="@estilos.css" text="GUARDAR PEDIDO" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#guardarPedido" prefHeight="25.0" prefWidth="204.0" styleClass="buttonSecundario2" stylesheets="@estilos.css" text="GUARDAR PEDIDO" textFill="#20334d">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -178,4 +196,14 @@
          </BorderPane.margin>
       </VBox>
    </right>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#abrirInventario" prefHeight="31.0" prefWidth="430.0" styleClass="buttonPrincipal" stylesheets="@estilos.css" text="Inventario " textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </bottom>
 </BorderPane>
